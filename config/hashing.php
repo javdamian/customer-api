@@ -1,4 +1,4 @@
-<?php
+    <?php
 
 return [
 
@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'driver' => 'bcrypt',
+    'driver' => 'sha1',
 
     /*
     |--------------------------------------------------------------------------
@@ -47,6 +47,22 @@ return [
         'memory' => 65536,
         'threads' => 1,
         'time' => 4,
+    ],
+
+    
+    /*
+    |--------------------------------------------------------------------------
+    | SHA1 Options
+    |--------------------------------------------------------------------------
+    |
+    | Here you may specify the configuration options that should be used when
+    | passwords are hashed using the SHA1 algorithm. These will allow you
+    | to control the amount of time it takes to hash the given password.
+    |
+    */
+
+    'sha1' => [
+        'rounds' => 1,
     ],
 
 ];
